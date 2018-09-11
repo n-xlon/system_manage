@@ -1,0 +1,208 @@
+html
+  width: 100%
+  height: 100%
+  overflow: hidden
+  font-size: 100px
+  body
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    font-size: .24rem
+    .app-container
+      width: 100%
+      height: 100%
+      background: url("../images/homepage.png") center center no-repeat fixed
+      background-size: 100% 100%
+      .header
+        width: 100%
+        color: #fff
+        height: .75rem
+        line-height: .75rem
+        display: flex
+        background: url("../images/header.png") no-repeat
+        .logo
+          width: 4.66rem
+          padding-left: .76rem
+          font-size: .3rem
+          font-family: "Microsoft YaHei UI"
+        .first-nav-list
+          flex: 1
+          font-size: .24rem
+          text-align: center
+          a
+            display: inline-block
+            position: relative
+            width: 1.24rem
+            height: 100%
+            margin-right: 20px
+            color: #00D2E1
+            img
+              width: 2.24rem
+              position: absolute
+              left: -.48rem
+              bottom: -0.72rem
+              display: none
+              max-width: initial
+          a.link-active
+            background: url("../images/menubg.png") no-repeat center center
+            background-size: 100% 50%
+            color: #fff
+            img
+              display: block
+      .main-container
+        .second-nav-list
+          position: relative
+          z-index: 2
+          width: 100%
+          padding-left: 7.66rem
+          box-sizing: border-box
+          height: .56rem
+          line-height: .56rem
+          font-size: .2rem
+          background: url("../images/secondmenubg.png") no-repeat
+          a
+            display: inline-block
+            height: 100%
+            margin-right: 30px
+            color: #00D2E1
+            &.router-link-active
+              color: #fff
+        .has-three-menu
+          display: flex
+          position: absolute
+          top: 1.33rem
+          bottom: 0
+          left: 0
+          right: 0
+          .three-nav-list
+            position: relative
+            width: 3.14rem
+            min-width: 200px
+            box-sizing: border-box
+            height: 100%
+            background: url("../images/leftnav.png") no-repeat
+            background-size: 100% 100%
+            &::after
+              content: ''
+              display: block
+              position: absolute
+              bottom: 0
+              left: 0
+              width: 100%
+              height: 13px
+              background: url("../images/leftNavBor.png") no-repeat
+              background-size: 100% 100%
+            a
+              display: block
+              padding-left: .88rem
+              color: #E3E3E3
+              font-size: .22rem
+              width: 100%
+              text-align: left
+              height: .55rem
+              line-height: .55rem
+              &.router-link-active
+                background: rgba(102, 199, 255, .1)
+                color: #D5D5D5
+                position: relative
+                &::before
+                  content: ''
+                  display: inline-block
+                  width: 4px
+                  height: 100%
+                  background-color: #29C2FE
+                  position: absolute
+                  left: 0
+                  top: 0
+                  box-shadow: 0 0 46px #e6e6e0
+                &::after
+                  content: ''
+                  display: inline-block
+                  width: .18rem
+                  height: .28rem
+                  background: url("../images/leftnavactive.png") no-repeat
+                  background-size: 100% 100%
+                  position: absolute
+                  left: .54rem
+                  top: .14rem
+          .right-content-warp
+            flex: 1
+            padding: 0 20px 20px 20px
+            overflow-y: auto
+            .right-content
+              position: relative
+              min-height: 100%
+              background: url("../images/rightcontent.png") center center no-repeat
+              background-size: 100% 100%
+              padding-bottom: 20px
+              &::after
+                content: ''
+                display: block
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 13px
+                background: url("../images/bottomBorder.png") no-repeat
+                background-size: 100% 100%
+              .title
+                height: .72rem
+                font-size: .24rem
+                line-height: .72rem
+                margin-bottom: 20px
+                padding: 0 20px
+                color: #3ABCFF
+                background-color: rgba(102, 199, 255, 0.1)
+                position: relative
+                font-weight: normal
+                .add-btn-warp
+                  text-align: right
+                &::before
+                  content: ''
+                  display: block
+                  width: .65rem
+                  height: .15rem
+                  background: url("../images/tip.png") no-repeat
+                  background-size: 100% 100%
+                  position: absolute
+                  top: -0.06rem
+                  left: .84rem
+                &::after
+                  content: ''
+                  display: block
+                  width: 3.14rem
+                  height: .08rem
+                  background: url("../images/title-bb.png") no-repeat
+                  background-size: 100% 100%
+                  position: absolute
+                  bottom: -0.04rem
+                  left: 0
+                h2
+                  padding-left: .23rem
+                  position: relative
+                  &::before
+                    content: ''
+                    display: inline-block
+                    width: .27rem
+                    height: .27rem
+                    background: url("../images/xunjian.png") no-repeat
+                    background-size: 100% 100%
+                    vertical-align: sub
+                    margin-left: -.2rem
+                    margin-right: .16rem
+                    background-size: 100% 100%
+              .form-warp
+                margin: 20px
+                padding: 20px
+                background: rgba(150,206,218,.1)
+                border-radius: 4px
+              .table-warp
+                padding: 0 20px
+        .has-no-left-nav
+          position: absolute
+          top: 1.33rem
+          bottom: 0
+          left: 0
+          right: 0
+          overflow-y: auto

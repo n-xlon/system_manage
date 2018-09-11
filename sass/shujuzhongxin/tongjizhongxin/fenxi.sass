@@ -1,0 +1,70 @@
+.analysis-page
+  font-family: SourceHanSansCN-Normal
+  .analysis-page-content
+    padding: 0 20px 20px 20px
+    .page-content
+      .is-title
+        display: flex
+        align-items: center
+        position: relative
+        padding-left: 10px
+        height: .4rem
+        line-height: .4rem
+        margin-bottom: .2rem
+        font-size: .24rem
+        color: #fff
+        .ivu-col:nth-child(1)
+          color: #D7D7D7
+        .ivu-col:nth-child(2)
+          color: #28B6EB
+          font-size: .14rem
+        .ivu-col:nth-child(3)
+          .is-btn
+            width: .62rem
+            height: .24rem
+            line-height: .24rem
+            font-size: .14rem
+            background: rgba(32,75,120,1)
+            border-radius: .06rem
+            text-align: center
+
+        &:before
+          content: ''
+          display: inline-block
+          width: 3px
+          height: 21px
+          background: rgba(42,195,251,1)
+          position: absolute
+          left: 0
+          top: 50%
+          margin-top: -10px
+      img
+        margin-right: 7px
+        transform: translateY(4px)
+    .analysis-page-tab
+      .ivu-tabs-bar
+        border-bottom: 0
+        color: #3ABCFF
+        .ivu-tabs-tab
+          position: relative
+          border-bottom: 1px solid #3ABCFF
+          &:after
+            content: ''
+            display: inline-block
+            width: 100%
+            height: 1px
+            background: #3ABCFF
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 0
+
+        .ivu-tabs-nav-container
+          font-size: .24rem
+        .ivu-tabs-tab-active
+          color: #FFF
+        .ivu-tabs-ink-bar
+          background: #fff
+
+  .ivu-layout
+    background: transparent

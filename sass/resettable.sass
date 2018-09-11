@@ -1,0 +1,41 @@
+.ivu-table-wrapper
+  border: 1px solid rgba(42,195,251,.2)
+  border-bottom: 0
+  border-right: 0
+  .ivu-table
+    background: transparent
+    font-size: .15rem
+    font-weight: 400
+    color: rgba(42,195,251,1)
+    &:after, &:before
+      content: ""
+      position: absolute
+      background-color: rgba(42,195,251,.2)
+    th
+      font-size: .19rem
+      color: rgba(215,215,215,1)
+      height: .44rem
+      background: rgba(42,195,251,.2)
+      border-bottom: 1px solid rgba(42,195,251,.2)
+    tr, td
+      color: #2AC3FB
+      height: .44rem
+      background: transparent
+      border-bottom: 1px solid rgba(42,195,251,.2)
+      .ivu-btn-primary
+        &:focus
+          box-shadow: none
+      button
+        position: relative
+        background: transparent
+        color: #2AC3FB
+        border: 0
+        &:after
+          content: ""
+          width: 100%
+          height: 1px
+          left: 0
+          bottom: 0
+          z-index: 1
+          position: absolute
+          background-color: #2AC3FB

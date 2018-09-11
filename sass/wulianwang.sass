@@ -1,0 +1,129 @@
+.right-content
+  @extend .right-content
+  .right-title
+    color: #fff
+    font-size: .3rem
+    font-weight: bold
+    line-height: 72px
+    padding-left: 20px
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+    border-radius: 5px
+  .right-details
+    margin: 20px 10px
+    // overflow: auto
+    flex: 1
+    label
+      margin-top: 10px
+    .label-item
+      color: #fff
+      width: 120px
+      &:first-child
+        margin-top: 0
+      .search-btn
+        margin-left: 10px
+    .ivu-select-selection
+      background-color: transparent
+    .echarts-project
+      text-align: center
+      .echarts-perl
+        display: inline-block
+    .noteTable
+      border: 1px solid rgba(42, 195, 251, 0.2)
+      .table-item
+        border-bottom: 1px solid rgba(42, 195, 251, 0.2)
+        .table-list
+          padding: 5px 0
+          font-size: 14px
+          .ivu-select-selection
+            background: transparent
+            border: 1px solid rgba(42, 195, 251, 0.6)
+          .ivu-input-wrapper
+            input
+              background-color: transparent
+              border-color: #57a3f3
+              color: #fff
+        &.table-tab
+          background: rgba(42, 195, 251, 0.2)
+          color: #fff
+          // border-bottom: 1px solid rgba(42, 195, 251, 0.2)
+          .table-list
+            color: #fff
+        .item-cont
+          color: #2AC3FB
+    .dq-system-data
+      background: rgba(150, 206, 218, .1)
+      display: inline-block
+      width: 2.5rem
+      padding: 5px
+      color: #4cc1ed
+      border-radius: 3px
+      display: inline-flex
+      align-items: center
+      justify-content: space-around
+      .cont
+        display: inline-block
+        .num
+          display: inline-block
+          font-weight: bold
+          font-size: 18px
+        .p-cont
+          font-size: 14px
+    .tcq-data-list
+      display: inline-block
+      background: rgba(150, 206, 218, .1)
+      width: 4rem
+      height: 1.4rem
+      border-radius: 3px
+      padding-left: 10px
+      position: relative
+      margin-top: 20px
+      margin-right: 10px
+      &:first-child
+        margin-top: 0
+        margin-left: 0
+      .img-icon
+        position: absolute
+        right: 20px
+        top: 10px
+      .list-item
+        color: #2AC3FB
+        .abnormal-nums
+          font-weight: bold
+          font-size: 30px
+          display: inline-block
+        .item-type
+          font-size: 15px
+    .col
+      margin-top: 20px
+          
+.nav-floors
+  display: block
+  color: #E3E3E3
+  font-size: .24rem
+  width: 100%
+  padding-left: 76px
+  height: 50px
+  line-height: 50px
+  &.active
+    background: rgba(102, 199, 255, .1)
+    color: #D5D5D5
+    position: relative
+    &::before
+      content: ''
+      display: inline-block
+      width: 4px
+      height: 100%
+      background-color: #29C2FE
+      position: absolute
+      left: 0
+      top: 0
+    &::after
+      content: ''
+      display: inline-block
+      width: 0.2rem
+      height: .36rem
+      background: url(../images/leftnavactive.png) no-repeat
+      background-size: contain
+      position: absolute
+      left: .54rem
+      top: .14rem

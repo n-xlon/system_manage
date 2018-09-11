@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>浙江省物业自管消防安全系统</title>
+</head>
+<body oncontextmenu='return false'>
+<div id="app"></div>
+</body>
+<script>
+    var deviceWidth;
+    setHtmlFontSize();
+    if (window.addEventListener) {
+        window.addEventListener('resize', function () {
+            setHtmlFontSize()
+        }, false);
+    }
+    function setHtmlFontSize () {
+        deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth;
+        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 19.2 + 'px !important';
+    }
+    console.log(process.env)
+</script>
+</html>

@@ -1,0 +1,172 @@
+.water-warp
+  z-index: 10
+  position: relative
+  .bgImg
+    position: absolute
+    z-index: 2
+    right: 20px
+  .right-content
+    position: relative
+    .title-img
+      margin-right: 10px
+    .water-pressure
+      position: relative
+      margin: 10px 20px
+      .pressure-title
+        color: #fff
+        padding-left: 15px
+        &::before
+          content: ''
+          height: 20px
+          border-left: 2px solid #2ac3fb
+          position: absolute
+          left: 0
+      .water-item
+        padding: 15px 0
+        .water-item-data
+          width: 2.6rem
+          height: 1.6rem
+          background: rgba(102, 199, 255, .1)
+          border-radius: 3px
+          position: relative
+          display: inline-block
+          margin-left: 15px
+          &::before
+            content: ''
+            background: url('../images/tip.png')
+            width: 43px
+            height: 7px
+            display: block
+            background-size: cover
+            position: absolute
+            top: -4px
+            left: 7px
+          .item-img
+            width: .8rem
+            margin-top: 20px
+            margin-left: 20px
+          .img-bd
+            width: 95%
+            position: absolute
+            bottom: .35rem
+            left: 0
+            right: 0
+            margin: auto
+          .item-content
+            display: inline-flex
+            flex-direction: column
+            align-items: flex-end
+            position: absolute
+            right: 15px
+            top: 10px
+            color: #fff
+            .num
+              color: #1f6e9a
+          .bottom-cont
+            color: #1f6e9a
+            position: absolute
+            width: 100%
+            left: 0
+            bottom: 0
+            text-align: center
+            font-size: .23rem
+        .water-item-pressure
+          width: 4.5rem
+          height: 2.85rem
+          background: rgba(102, 199, 255, .1)
+          border-radius: 3px
+          position: relative
+          display: inline-block
+          margin-left: 15px
+          margin-top: 15px
+          .title-list
+            width: 100%
+            position: relative
+            span
+              margin-left: 10px
+              position: absolute
+              margin-top: 10px
+          .item-img-pres
+            margin: 10px 0 0 10px
+            width: .35rem
+          .img-bd-pres
+            width: 95%
+            position: absolute
+            left: 0
+            right: 0
+            margin: auto
+          .bottom-cont
+            color: #1f6e9a
+            position: absolute
+            width: 100%
+            left: 10px
+            bottom: 4px
+            font-size: .23rem
+          .data-type
+            width: 100%
+            margin-top: 0.15rem
+            padding: 0 10px
+            &:nth-child(odd)
+              margin-left: 4%
+            .type-item
+              width: 45%
+              background: url(../images/waterSystem/item-bg1.png) center center no-repeat
+              background-size: contain
+              text-align: center
+              display: inline-block
+              margin-top: 10px
+              img
+                width: .4rem
+                height: .4rem
+              .type-cont
+                display: inline-block
+                margin-left: 10px
+                p
+                  color: #1f6e9a
+            .type-item1
+              @extend .type-item
+              background: url(../images/waterSystem/item-bg2.png) center center no-repeat
+              background-size: contain
+    .content-bottom-img
+      position: absolute
+      bottom: -2px
+              
+
+
+.three-nav-list
+  @extend .three-nav-list
+  .nav-link
+    display: block
+    padding-left: .88rem
+    color: #E3E3E3
+    font-size: .22rem
+    width: 100%
+    text-align: left
+    height: .55rem
+    line-height: .55rem
+    &.active
+      background: rgba(102, 199, 255, .1)
+      color: #D5D5D5
+      position: relative
+      &::before
+        content: ''
+        display: inline-block
+        width: 4px
+        height: 100%
+        background-color: #29C2FE
+        position: absolute
+        left: 0
+        top: 0
+        box-shadow: 0 0 46px #e6e6e0
+      &::after
+        content: ''
+        display: inline-block
+        width: 0.2rem
+        height: .36rem
+        background: url(../images/leftnavactive.png) no-repeat
+        background-size: contain
+        position: absolute
+        left: .54rem
+        top: .14rem
+
+
